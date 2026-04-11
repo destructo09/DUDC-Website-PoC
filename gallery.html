@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - DUDC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">DUDC</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="membership.html" class="cta-btn">Join Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Dive highlights from our members</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+
+            <div class="gallery-cta fade-in">
+                <h3>Share Your Dive Photos</h3>
+                <p>Members can add photos to our shared Google Photos album. Your best shots may get featured here!</p>
+                <!-- Replace # with your actual shared Google Photos album link -->
+                <a href="#" class="cta-btn">Open Shared Album</a>
+            </div>
+
+            <h2 class="section-title fade-in" style="margin-top: 50px;">Featured Photos</h2>
+            <p class="section-subtitle fade-in">Some of our favorite moments from club dives and events</p>
+
+            <div class="gallery-grid">
+                <!--
+                    Replace these placeholder images with real club photos.
+                    To add a new photo: copy a gallery-item div and update the src and caption.
+                -->
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&q=80" alt="Coral reef diving" loading="lazy">
+                    <div class="caption">Coral reef exploration</div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Ocean diving" loading="lazy">
+                    <div class="caption">NC coast wreck dive</div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=600&q=80" alt="Sea turtle" loading="lazy">
+                    <div class="caption">Sea turtle encounter</div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Scuba divers" loading="lazy">
+                    <div class="caption">Group dive at the quarry</div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=600&q=80" alt="Underwater photography" loading="lazy">
+                    <div class="caption">Underwater photography meetup</div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1682687221038-404670f01d03?w=600&q=80" alt="Tropical dive" loading="lazy">
+                    <div class="caption">Club trip to the tropics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Down Under Divers Club</h3>
+                    <p>The largest and longest-running independent scuba club in North Carolina. Bringing divers together since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="membership.html">Membership</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
+                    <a href="mailto:info@dudcnc.org">Email Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Down Under Divers Club. Raleigh, North Carolina.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

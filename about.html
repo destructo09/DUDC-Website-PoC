@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - DUDC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +14,16 @@
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo">DUDC</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="membership.html">Membership</a></li>
                     <li><a href="membership.html" class="cta-btn">Join Now</a></li>
                 </ul>
@@ -31,36 +40,51 @@
 
     <section>
         <div class="container" style="max-width: 800px;">
-            <p style="font-size: 1.2rem; margin-bottom: 20px;">
-                We are the largest and longest-running independent scuba club in North Carolina. 
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 20px; font-weight: 500; color: var(--primary);">
+                We are the largest and longest-running independent scuba club in North Carolina.
             </p>
-            <p style="margin-bottom: 20px;">
+            <p class="fade-in" style="margin-bottom: 20px; color: var(--text-light);">
                 Founded in 1995, our mission is to bring divers together. We support all local dive shops without competing with them. Whether you are a technical diver, a photographer, or brand new to the sport, you'll find a buddy here.
             </p>
-            <p style="margin-bottom: 40px;">
+            <p class="fade-in" style="margin-bottom: 40px; color: var(--text-light);">
                 Our members are active in the local community, organizing cleanup dives at Jordan Lake, hosting guest speakers from DAN (Divers Alert Network), and planning group trips to the coast.
             </p>
 
-            <div style="background: #eefbff; padding: 20px; border-radius: 10px; border-left: 5px solid var(--primary);">
-                <h3 style="color: var(--primary); margin-bottom: 10px;">Meeting Details</h3>
+            <div class="info-box fade-in">
+                <h3>Meeting Details</h3>
                 <p><strong>When:</strong> 2nd Tuesday of every month @ 7:30 PM</p>
                 <p><strong>Where:</strong> Dave & Buster's, Cary, NC</p>
-                <p style="font-size: 0.9rem; margin-top: 10px;">*We also provide a Zoom link for members who cannot attend in person.</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: var(--text-light);">*We also provide a Zoom link for members who cannot attend in person.</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <h3>Down Under Divers Club</h3>
-            <p>Raleigh, North Carolina</p>
-            <div class="footer-links">
-                <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
-                <a href="mailto:info@dudcnc.org">Contact Us</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Down Under Divers Club</h3>
+                    <p>The largest and longest-running independent scuba club in North Carolina. Bringing divers together since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="membership.html">Membership</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
+                    <a href="mailto:info@dudcnc.org">Email Us</a>
+                </div>
             </div>
-            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Down Under Divers Club.</p>
+            <div class="footer-bottom">
+                &copy; 2026 Down Under Divers Club. Raleigh, North Carolina.
+            </div>
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>
