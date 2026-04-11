@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Down Under Divers Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container navbar">
-            <div class="logo">DUDC</div>
+            <a href="index.html" class="logo">DUDC</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="about.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="membership.html">Membership</a></li>
                     <li><a href="membership.html" class="cta-btn">Join Now</a></li>
                 </ul>
@@ -23,33 +32,66 @@
     </header>
 
     <section class="hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Down Under Divers Club</h1>
             <p>Exploring the underwater world of North Carolina and beyond since 1995.</p>
-            <a href="membership.html" class="cta-btn" style="font-size: 1.1rem;">Become a Member</a>
+            <a href="membership.html" class="cta-btn" style="font-size: 1.1rem; padding: 14px 32px;">Become a Member</a>
         </div>
     </section>
 
     <section>
-        <div class="container" style="text-align: center;">
-            <h2>Welcome to the Club</h2>
-            <p style="max-width: 700px; margin: 20px auto;">
-                We are a community of divers based in Pittsboro and Cary, NC. Whether you love searching for shark teeth at the coast, diving the local quarries, or just talking shop, you belong here.
+        <div class="container">
+            <h2 class="section-title fade-in">Welcome to the Club</h2>
+            <p class="section-subtitle fade-in">
+                We are a community of divers based in the Triangle area of NC. Whether you love searching for shark teeth, diving quarries, or just talking shop, you belong here.
             </p>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#127754;</div>
+                    <h3>Dive Together</h3>
+                    <p>Join group dives at local quarries, NC coast wrecks, and organized trips to warm-water destinations.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#128172;</div>
+                    <h3>Monthly Meetings</h3>
+                    <p>Every 2nd Tuesday at Dave & Buster's in Cary. Guest speakers, trip reports, and good company.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#129309;</div>
+                    <h3>Community First</h3>
+                    <p>We support all local dive shops without competing. Cleanup dives, safety talks, and mentoring new divers.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <h3>Down Under Divers Club</h3>
-            <p>Raleigh, North Carolina</p>
-            <div class="footer-links">
-                <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
-                <a href="mailto:info@dudcnc.org">Contact Us</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Down Under Divers Club</h3>
+                    <p>The largest and longest-running independent scuba club in North Carolina. Bringing divers together since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="membership.html">Membership</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
+                    <a href="mailto:info@dudcnc.org">Email Us</a>
+                </div>
             </div>
-            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Down Under Divers Club.</p>
+            <div class="footer-bottom">
+                &copy; 2026 Down Under Divers Club. Raleigh, North Carolina.
+            </div>
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

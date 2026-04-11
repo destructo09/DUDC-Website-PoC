@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membership - DUDC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +14,16 @@
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo">DUDC</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="about.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="membership.html" class="active">Membership</a></li>
                     <li><a href="membership.html" class="cta-btn">Join Now</a></li>
                 </ul>
@@ -29,14 +38,14 @@
         </div>
     </div>
 
-<section>
+    <section>
         <div class="container">
-            
             <div class="pricing-grid">
-                
-                <div class="card">
+
+                <div class="card fade-in">
                     <h3>Single</h3>
                     <div class="price">$50</div>
+                    <div class="price-period">per year</div>
                     <ul class="features">
                         <li>Voting Rights</li>
                         <li>Free Lunch at Cookouts</li>
@@ -46,9 +55,10 @@
                     <a href="https://buy.stripe.com/test_4gM28tdwzg2XecvcAh4Ja00" class="cta-btn" style="display: block;">Join Single</a>
                 </div>
 
-                <div class="card">
+                <div class="card featured fade-in">
                     <h3>Couple</h3>
                     <div class="price">$80</div>
+                    <div class="price-period">per year</div>
                     <ul class="features">
                         <li>Benefits for 2 people</li>
                         <li>Free Lunch at Cookouts</li>
@@ -58,9 +68,10 @@
                     <a href="https://buy.stripe.com/test_4gMcN7akn5oj6K3eIp4Ja01" class="cta-btn" style="display: block;">Join Couple</a>
                 </div>
 
-                <div class="card">
+                <div class="card fade-in">
                     <h3>Family</h3>
                     <div class="price">$100</div>
+                    <div class="price-period">per year</div>
                     <ul class="features">
                         <li>Benefits for whole family</li>
                         <li>Free Lunch at Cookouts</li>
@@ -70,38 +81,53 @@
                     <a href="https://buy.stripe.com/test_4gM28takn03Z2tNdEl4Ja02" class="cta-btn" style="display: block;">Join Family</a>
                 </div>
 
-                <div class="card" style="border: 2px solid var(--primary); background: #fdfdfd;">
+                <div class="card fade-in">
                     <h3 style="color: var(--accent);">New Diver</h3>
-                    <div class="price" style="color: var(--primary);">$0</div>
+                    <div class="price">$0</div>
+                    <div class="price-period">first year free</div>
                     <ul class="features">
                         <li><strong>1st Year Free!</strong></li>
                         <li>For new Open Water certs</li>
                         <li>Full Voting Rights</li>
                         <li>All Club Benefits Included</li>
                     </ul>
-                    <a href="https://buy.stripe.com/test_dRmcN7647g2X4BVdEl4Ja03" class="cta-btn" style="display: block; background-color: var(--accent);">Claim Free</a>
+                    <a href="https://buy.stripe.com/test_dRmcN7647g2X4BVdEl4Ja03" class="cta-btn-accent" style="display: block;">Claim Free Year</a>
                 </div>
 
             </div>
-            
-            <div style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: #666;">
+
+            <div class="fade-in" style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: var(--text-light);">
                 <p><em>*Free New Diver membership requires proof of Open Water certification within the last 12 months.</em></p>
             </div>
-
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <h3>Down Under Divers Club</h3>
-            <p>Raleigh, North Carolina</p>
-            <div class="footer-links">
-                <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
-                <a href="mailto:info@dudcnc.org">Contact Us</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Down Under Divers Club</h3>
+                    <p>The largest and longest-running independent scuba club in North Carolina. Bringing divers together since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="membership.html">Membership</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.facebook.com/downunderdiversclub">Facebook Group</a>
+                    <a href="mailto:info@dudcnc.org">Email Us</a>
+                </div>
             </div>
-            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Down Under Divers Club.</p>
+            <div class="footer-bottom">
+                &copy; 2026 Down Under Divers Club. Raleigh, North Carolina.
+            </div>
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>
